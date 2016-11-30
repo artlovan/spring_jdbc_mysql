@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost/db_test
+    username: root
+    password: admin
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#    schema: classpath:load.sql
+  jpa:
+    hibernate:
+        ddl-auto: create-drop
+    test-on-borrow: true
+    validate-query: /* ping  */
+#
+#spring:
+#  datasource:
+#    url: jdbc:msql:mem:testdb
+#    schema: classpath:load.sql
+#  h2:
+#    console:
+#      enabled: true
+#      path: /h2
